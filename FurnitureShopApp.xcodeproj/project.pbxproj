@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B13D3362A45CDD900585E32 /* DetailScrean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B13D3352A45CDD900585E32 /* DetailScrean.swift */; };
+		5B28C5922A44DEB800AB6193 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B28C5912A44DEB800AB6193 /* HomeScreen.swift */; };
+		5B7CA0672A446D03007E4E3F /* PlayfairDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B7CA0652A446D03007E4E3F /* PlayfairDisplay-Bold.ttf */; };
+		5B7CA0682A446D03007E4E3F /* PlayfairDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B7CA0662A446D03007E4E3F /* PlayfairDisplay-Regular.ttf */; };
+		5BF1A4242A238B8500F6DB55 /* FurnitureShopAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1A4232A238B8500F6DB55 /* FurnitureShopAppApp.swift */; };
+		5BF1A4262A238B8500F6DB55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1A4252A238B8500F6DB55 /* ContentView.swift */; };
+		5BF1A4282A238B8800F6DB55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BF1A4272A238B8800F6DB55 /* Assets.xcassets */; };
+		5BF1A42B2A238B8800F6DB55 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BF1A42A2A238B8800F6DB55 /* Preview Assets.xcassets */; };
+		5BF1A4352A238B8800F6DB55 /* FurnitureShopAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1A4342A238B8800F6DB55 /* FurnitureShopAppTests.swift */; };
+		5BF1A43F2A238B8800F6DB55 /* FurnitureShopAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1A43E2A238B8800F6DB55 /* FurnitureShopAppUITests.swift */; };
+		5BF1A4412A238B8800F6DB55 /* FurnitureShopAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1A4402A238B8800F6DB55 /* FurnitureShopAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5BF1A4312A238B8800F6DB55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BF1A4182A238B8500F6DB55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BF1A41F2A238B8500F6DB55;
+			remoteInfo = FurnitureShopApp;
+		};
+		5BF1A43B2A238B8800F6DB55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BF1A4182A238B8500F6DB55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BF1A41F2A238B8500F6DB55;
+			remoteInfo = FurnitureShopApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5B13D3352A45CDD900585E32 /* DetailScrean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScrean.swift; sourceTree = "<group>"; };
+		5B28C5912A44DEB800AB6193 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		5B7CA0652A446D03007E4E3F /* PlayfairDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		5B7CA0662A446D03007E4E3F /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		5BF1A4202A238B8500F6DB55 /* FurnitureShopApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FurnitureShopApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BF1A4232A238B8500F6DB55 /* FurnitureShopAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureShopAppApp.swift; sourceTree = "<group>"; };
+		5BF1A4252A238B8500F6DB55 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5BF1A4272A238B8800F6DB55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5BF1A42A2A238B8800F6DB55 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5BF1A4302A238B8800F6DB55 /* FurnitureShopAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FurnitureShopAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BF1A4342A238B8800F6DB55 /* FurnitureShopAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureShopAppTests.swift; sourceTree = "<group>"; };
+		5BF1A43A2A238B8800F6DB55 /* FurnitureShopAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FurnitureShopAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BF1A43E2A238B8800F6DB55 /* FurnitureShopAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureShopAppUITests.swift; sourceTree = "<group>"; };
+		5BF1A4402A238B8800F6DB55 /* FurnitureShopAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureShopAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BF1A41D2A238B8500F6DB55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BF1A42D2A238B8800F6DB55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BF1A4372A238B8800F6DB55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B28C5902A44DE9C00AB6193 /* sscreen */ = {
+			isa = PBXGroup;
+			children = (
+				5B28C5912A44DEB800AB6193 /* HomeScreen.swift */,
+				5B13D3352A45CDD900585E32 /* DetailScrean.swift */,
+			);
+			name = sscreen;
+			sourceTree = "<group>";
+		};
+		5B7CA0642A446D03007E4E3F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5B7CA0652A446D03007E4E3F /* PlayfairDisplay-Bold.ttf */,
+				5B7CA0662A446D03007E4E3F /* PlayfairDisplay-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		5BF1A4172A238B8500F6DB55 = {
+			isa = PBXGroup;
+			children = (
+				5BF1A4222A238B8500F6DB55 /* FurnitureShopApp */,
+				5B7CA0642A446D03007E4E3F /* Fonts */,
+				5BF1A4332A238B8800F6DB55 /* FurnitureShopAppTests */,
+				5BF1A43D2A238B8800F6DB55 /* FurnitureShopAppUITests */,
+				5BF1A4212A238B8500F6DB55 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5BF1A4212A238B8500F6DB55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BF1A4202A238B8500F6DB55 /* FurnitureShopApp.app */,
+				5BF1A4302A238B8800F6DB55 /* FurnitureShopAppTests.xctest */,
+				5BF1A43A2A238B8800F6DB55 /* FurnitureShopAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BF1A4222A238B8500F6DB55 /* FurnitureShopApp */ = {
+			isa = PBXGroup;
+			children = (
+				5BF1A4232A238B8500F6DB55 /* FurnitureShopAppApp.swift */,
+				5BF1A4252A238B8500F6DB55 /* ContentView.swift */,
+				5B28C5902A44DE9C00AB6193 /* sscreen */,
+				5BF1A4272A238B8800F6DB55 /* Assets.xcassets */,
+				5BF1A4292A238B8800F6DB55 /* Preview Content */,
+			);
+			path = FurnitureShopApp;
+			sourceTree = "<group>";
+		};
+		5BF1A4292A238B8800F6DB55 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5BF1A42A2A238B8800F6DB55 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5BF1A4332A238B8800F6DB55 /* FurnitureShopAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				5BF1A4342A238B8800F6DB55 /* FurnitureShopAppTests.swift */,
+			);
+			path = FurnitureShopAppTests;
+			sourceTree = "<group>";
+		};
+		5BF1A43D2A238B8800F6DB55 /* FurnitureShopAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5BF1A43E2A238B8800F6DB55 /* FurnitureShopAppUITests.swift */,
+				5BF1A4402A238B8800F6DB55 /* FurnitureShopAppUITestsLaunchTests.swift */,
+			);
+			path = FurnitureShopAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5BF1A41F2A238B8500F6DB55 /* FurnitureShopApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BF1A4442A238B8800F6DB55 /* Build configuration list for PBXNativeTarget "FurnitureShopApp" */;
+			buildPhases = (
+				5BF1A41C2A238B8500F6DB55 /* Sources */,
+				5BF1A41D2A238B8500F6DB55 /* Frameworks */,
+				5BF1A41E2A238B8500F6DB55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FurnitureShopApp;
+			productName = FurnitureShopApp;
+			productReference = 5BF1A4202A238B8500F6DB55 /* FurnitureShopApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5BF1A42F2A238B8800F6DB55 /* FurnitureShopAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BF1A4472A238B8800F6DB55 /* Build configuration list for PBXNativeTarget "FurnitureShopAppTests" */;
+			buildPhases = (
+				5BF1A42C2A238B8800F6DB55 /* Sources */,
+				5BF1A42D2A238B8800F6DB55 /* Frameworks */,
+				5BF1A42E2A238B8800F6DB55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BF1A4322A238B8800F6DB55 /* PBXTargetDependency */,
+			);
+			name = FurnitureShopAppTests;
+			productName = FurnitureShopAppTests;
+			productReference = 5BF1A4302A238B8800F6DB55 /* FurnitureShopAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5BF1A4392A238B8800F6DB55 /* FurnitureShopAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BF1A44A2A238B8800F6DB55 /* Build configuration list for PBXNativeTarget "FurnitureShopAppUITests" */;
+			buildPhases = (
+				5BF1A4362A238B8800F6DB55 /* Sources */,
+				5BF1A4372A238B8800F6DB55 /* Frameworks */,
+				5BF1A4382A238B8800F6DB55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BF1A43C2A238B8800F6DB55 /* PBXTargetDependency */,
+			);
+			name = FurnitureShopAppUITests;
+			productName = FurnitureShopAppUITests;
+			productReference = 5BF1A43A2A238B8800F6DB55 /* FurnitureShopAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BF1A4182A238B8500F6DB55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					5BF1A41F2A238B8500F6DB55 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					5BF1A42F2A238B8800F6DB55 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 5BF1A41F2A238B8500F6DB55;
+					};
+					5BF1A4392A238B8800F6DB55 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 5BF1A41F2A238B8500F6DB55;
+					};
+				};
+			};
+			buildConfigurationList = 5BF1A41B2A238B8500F6DB55 /* Build configuration list for PBXProject "FurnitureShopApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5BF1A4172A238B8500F6DB55;
+			productRefGroup = 5BF1A4212A238B8500F6DB55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BF1A41F2A238B8500F6DB55 /* FurnitureShopApp */,
+				5BF1A42F2A238B8800F6DB55 /* FurnitureShopAppTests */,
+				5BF1A4392A238B8800F6DB55 /* FurnitureShopAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5BF1A41E2A238B8500F6DB55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BF1A42B2A238B8800F6DB55 /* Preview Assets.xcassets in Resources */,
+				5BF1A4282A238B8800F6DB55 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BF1A42E2A238B8800F6DB55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BF1A4382A238B8800F6DB55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B7CA0682A446D03007E4E3F /* PlayfairDisplay-Regular.ttf in Resources */,
+				5B7CA0672A446D03007E4E3F /* PlayfairDisplay-Bold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BF1A41C2A238B8500F6DB55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B13D3362A45CDD900585E32 /* DetailScrean.swift in Sources */,
+				5BF1A4262A238B8500F6DB55 /* ContentView.swift in Sources */,
+				5BF1A4242A238B8500F6DB55 /* FurnitureShopAppApp.swift in Sources */,
+				5B28C5922A44DEB800AB6193 /* HomeScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BF1A42C2A238B8800F6DB55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BF1A4352A238B8800F6DB55 /* FurnitureShopAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BF1A4362A238B8800F6DB55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BF1A43F2A238B8800F6DB55 /* FurnitureShopAppUITests.swift in Sources */,
+				5BF1A4412A238B8800F6DB55 /* FurnitureShopAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5BF1A4322A238B8800F6DB55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BF1A41F2A238B8500F6DB55 /* FurnitureShopApp */;
+			targetProxy = 5BF1A4312A238B8800F6DB55 /* PBXContainerItemProxy */;
+		};
+		5BF1A43C2A238B8800F6DB55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BF1A41F2A238B8500F6DB55 /* FurnitureShopApp */;
+			targetProxy = 5BF1A43B2A238B8800F6DB55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5BF1A4422A238B8800F6DB55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5BF1A4432A238B8800F6DB55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5BF1A4452A238B8800F6DB55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FurnitureShopApp/Preview Content\"";
+				DEVELOPMENT_TEAM = BMBZXVKB64;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wedlec.FurnitureShopApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5BF1A4462A238B8800F6DB55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FurnitureShopApp/Preview Content\"";
+				DEVELOPMENT_TEAM = BMBZXVKB64;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wedlec.FurnitureShopApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5BF1A4482A238B8800F6DB55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BMBZXVKB64;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wedlec.FurnitureShopAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FurnitureShopApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FurnitureShopApp";
+			};
+			name = Debug;
+		};
+		5BF1A4492A238B8800F6DB55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BMBZXVKB64;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wedlec.FurnitureShopAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FurnitureShopApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FurnitureShopApp";
+			};
+			name = Release;
+		};
+		5BF1A44B2A238B8800F6DB55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BMBZXVKB64;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wedlec.FurnitureShopAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FurnitureShopApp;
+			};
+			name = Debug;
+		};
+		5BF1A44C2A238B8800F6DB55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BMBZXVKB64;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wedlec.FurnitureShopAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FurnitureShopApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BF1A41B2A238B8500F6DB55 /* Build configuration list for PBXProject "FurnitureShopApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BF1A4422A238B8800F6DB55 /* Debug */,
+				5BF1A4432A238B8800F6DB55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BF1A4442A238B8800F6DB55 /* Build configuration list for PBXNativeTarget "FurnitureShopApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BF1A4452A238B8800F6DB55 /* Debug */,
+				5BF1A4462A238B8800F6DB55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BF1A4472A238B8800F6DB55 /* Build configuration list for PBXNativeTarget "FurnitureShopAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BF1A4482A238B8800F6DB55 /* Debug */,
+				5BF1A4492A238B8800F6DB55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BF1A44A2A238B8800F6DB55 /* Build configuration list for PBXNativeTarget "FurnitureShopAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BF1A44B2A238B8800F6DB55 /* Debug */,
+				5BF1A44C2A238B8800F6DB55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5BF1A4182A238B8500F6DB55 /* Project object */;
+}
