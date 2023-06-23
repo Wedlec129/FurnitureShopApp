@@ -8,12 +8,18 @@
 import SwiftUI
 
 struct DetailScrean: View {
+    //это переменная для перехода назад
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var body: some View {
         ZStack{
+            //описание и кнопки
             DetailScreanView()
+            
                 .navigationBarBackButtonHidden(true)
+            
+            //добавляем кнопки на навегацию
                 .navigationBarItems(leading:
+                                        //кастомные  действие
                                         CustomBackButtonView(action:{presentationMode.wrappedValue.dismiss()}),
                         trailing: Image("treeDot")
                 )
@@ -32,16 +38,18 @@ struct DetailScrean_Previews: PreviewProvider {
 
 struct DescriptionView: View {
     var body: some View {
+        //текст
         VStack(alignment: .leading){
             Text("Luxury Swedian chair")
                 .font(.title)
                 .fontWeight(.bold)
             HStack(spacing: 5){
+                //звёзды
                 ForEach(0 ..< 5) { item in
                     Image("star")
                 }
                 Text("(4.9)")
-                    .opacity(0.5)
+                    .opacity(0.5) //прозрачность
                     .padding(.leading,8)
                 Spacer()
                 
@@ -54,6 +62,7 @@ struct DescriptionView: View {
                 .lineSpacing(8.0)
                 .opacity(0.6)
             
+            //аля описание
             HStack{
                 VStack(alignment: .leading){
                     Text("Size")
@@ -76,12 +85,12 @@ struct DescriptionView: View {
                 
             }
             .padding(.top)
-         
             HStack{
                 VStack(alignment: .leading){
                     Text("Colors")
                         .fontWeight(.semibold)
                     HStack{
+                        //красивые точки цветоы
                         ColorDotView(color:.white)
                         ColorDotView(color:.black)
                         ColorDotView(color:Color("Primary"))
@@ -98,6 +107,7 @@ struct DescriptionView: View {
                                 .padding(.all,8)
                         })
                         .frame(width: 30,height: 30)
+                        //обводим красиво
                         .overlay(RoundedRectangle(cornerRadius: 50).stroke())
                         .foregroundColor(.black)
                         
@@ -137,7 +147,7 @@ struct ColorDotView: View {
     let color:Color
     var body: some View {
         color
-            .frame(width: 24, height: 24)
+            .frame(width: 24, height: 24) //нужного размера
             .clipShape(Circle())
     }
 }
@@ -145,13 +155,16 @@ struct ColorDotView: View {
 struct DetailScreanView: View {
     var body: some View {
         ZStack{
-            
+            //фон
             Color("Bg")
                 .ignoresSafeArea()
             
+            //сколл
             ScrollView(.vertical,showsIndicators: true){
+                //картинка
                 Image("chair_1")
                     .resizable()
+                    //растягиваем изобр
                     .aspectRatio(contentMode: .fit)
                     .edgesIgnoringSafeArea(.top)
                 
@@ -192,10 +205,12 @@ struct DetailScreanView: View {
     }
 }
 
+//кастомныя кнопка назад
 struct CustomBackButtonView: View {
     let action: ()->Void
     var body: some View {
         Button(action: {action()}, label: {
+            //картинка стрелки
             Image(systemName: "chevron.backward")
                 .padding(.all,12)
                 .background(Color(.white))

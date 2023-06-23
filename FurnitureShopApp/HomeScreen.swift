@@ -9,26 +9,41 @@ import SwiftUI
 
 
 struct HomeScreen: View {
+    
+    //эти штуки мы используем для категорий
     @State private var selectIndex: Int = 0
     private var categories = ["All","Chair","Sofa","Lamp","Kithen","Taible"]
     
     var body: some View {
         NavigationView {
             ZStack {
+                //делаем задний фон и убираем сейв арену
                 Color("Bg")
                     .edgesIgnoringSafeArea(.all)
+                //вся прога находится в вертикальном скроле
                 ScrollView(.vertical,showsIndicators: false){
+                    
                     VStack(alignment: .leading){
+                        //это верхние кнопки
                         AppBarView()
+                        
+                        //это текст про наше приложение
                         TagLineView()
                             .padding()
+                        
+                        //это показываем поисковую  строку и сканер
                         SearchAndScan()
+                        
                         //показывает категории через цикл
+                        //и всё это можно скролить горизонтально
                         ScrollView(.horizontal,showsIndicators: false){
                             HStack{
-                                
+                                //повторяем сколько категорий
                                 ForEach(0 ..< categories.count,id: \.self) { i in
+                                    
+                                    //вызываем категорию
                                     CategoryView(isActive: i==selectIndex, text: categories[i])
+                                    //обработка нажатия те актиной
                                         .onTapGesture {
                                             selectIndex=i
                                         }
@@ -39,21 +54,27 @@ struct HomeScreen: View {
                         
                         
                         Text("Popular")
+                        //задаём шрифт и размер текста
                             .font(.custom("PlayfairDisplay-Regular", size: 28))
                             .padding(.horizontal)
+                        //сколл горизонтальный
                         ScrollView(.horizontal,showsIndicators: false){
                             HStack{
+                                //4 картинки
                                 ForEach(1 ..< 5) { item in
+                                    //это ссылки обработка нажатие
+                                    //на картинку
                                     NavigationLink(destination: {
                                         DetailScrean()
                                         
                                     }, label:{
+                                        //карты продуукта
                                         ProductCardView(image: Image("chair_\(item)"),size: 210)
-                                            .navigationBarHidden(false)
                                             .padding(.trailing)
                                         
                                     })
                                     .navigationBarHidden(true)
+                                    //убираем навиг бар
                                     
                                 }
                                 .padding(.trailing)
@@ -81,7 +102,7 @@ struct HomeScreen: View {
                     }
                 }
                 
-                //custom Bottom navbar
+                //custom кнопки навиг бар
                 HStack{
                     
                     BottomNavBarItem(image: Image("Home")) {}
@@ -92,9 +113,11 @@ struct HomeScreen: View {
                 }
                 .padding()
                 .background(Color.white)
-                .clipShape(Capsule())
+                .clipShape(Capsule()) //как элепс обризаем
                 .padding(.horizontal)
+                //тень
                 .shadow(color: Color.black.opacity(0.15), radius: 8,x: 2, y: 6)
+                //размеры и положение бара(бара бара бебе бере ре :) )
                 .frame(maxHeight: .infinity,alignment: .bottom)
                 
                 
@@ -117,32 +140,33 @@ struct HomeScreen_Previews: PreviewProvider {
 struct AppBarView: View {
     var body: some View {
         HStack{
-            
+            //кнопка и иконка меню
             Button(action: {}){
                 Image("menu")
                     .padding()
-                    .background(Color(.white))
-                    .cornerRadius(10)
+                    .background(Color(.white)) //задний фон
+                    .cornerRadius(10)   //закругдение
             }
-            Spacer()
-            
+            Spacer()//максимальный спейсинг
             Button(action: {}){
                 Image("Profile")
-                    .resizable()
-                    .frame(width: 42,height: 42)
+                    .resizable()//ресайз картнки
+                    .frame(width: 42,height: 42)//и подбираем размеры
                     .background(Color(.white))
                     .cornerRadius(10)
             }
             
         }
-        .padding(.horizontal)
+        .padding(.horizontal)//отспуп по горизонту
     }
 }
 
 struct TagLineView: View {
     var body: some View {
         Text("Find the \nBest ")
+        //выбираем шрифт и размер текста
             .font(.custom("PlayfairDisplay-Regular", size: 28))
+        //цвет текста
             .foregroundColor(Color("Primary"))
         + Text("Furniture!")
             .font(.custom("PlayfairDisplay-Bold", size: 28))
@@ -152,20 +176,22 @@ struct TagLineView: View {
 }
 
 struct SearchAndScan: View {
+    //переменная для поиска
     @State var search=""
     var body: some View {
         HStack{
+            //картинка для поиска и строка
             HStack{
                 Image("Search")
                 TextField("Search Furnityre",text: $search)
                 
             }
-            .padding(.all,20)
+            .padding(.all,20)//отсуп и значение
             .background(Color(.white))
             .cornerRadius(10)
             .padding(.trailing)
             
-            
+            //используем стстемную картинку
             Image(systemName: "barcode.viewfinder")
                 .resizable()
                 .frame(width: 30,height: 30)
@@ -175,10 +201,11 @@ struct SearchAndScan: View {
             
             
         }
-        .padding(.horizontal)
+        .padding(.horizontal) //горизонтальный отсуп
     }
 }
 
+//наши категории
 struct CategoryView: View {
     
     let isActive: Bool
@@ -186,9 +213,11 @@ struct CategoryView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0){
+            //ткуст
             Text(text)
                 .fontWeight(.medium)
                 .font(.system(size: 18))
+            //цвет активной секции
                 .foregroundColor(isActive ? Color("Primary") : Color.black.opacity(0.5))
             
             if(isActive){
@@ -204,16 +233,17 @@ struct CategoryView: View {
 }
 
 struct ProductCardView: View {
-    var image: Image
+    var image: Image //переменная картинки
     var size: CGFloat
     var body: some View {
         VStack{
-            image
-                .resizable()
-                .frame(width: size,height: 200*(size/210))
+            image //показываем картинку
+                .resizable() //масштабируем её
+                .frame(width: size,height: 200*(size/210)) //под нужный размер
                 .cornerRadius(20)
             Text("Luxury Swedian chair")
                 .foregroundColor(.black)
+            //ставим звёзды
             HStack{
                 ForEach(0 ..< 5) { item in
                     Image("star")

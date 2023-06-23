@@ -18,6 +18,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
+            //загружаем гланый экран
             HomeScreen()
             
            // DetailScrean()
